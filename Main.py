@@ -17,6 +17,7 @@ class Main:
     customer1_account.set_num_account("46700-2")
     customer1_account.balance = 0
 
-    # show data of the customers and your account balance
-    print(customer1_account.get_owner(), "| Ac. Number: ", customer1_account.get_num_account(), "| Your Balance: ",
-          customer1_account.balance)
+    # data manipulation
+    customer1_account.deposit(1000)
+    customer1_account.withdraw(400)
+    customer1_account.extract()

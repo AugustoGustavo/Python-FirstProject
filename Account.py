@@ -30,3 +30,16 @@ class Account:
             exit()
         else:
             self.__balance = balance
+
+    def withdraw(self, value):
+        if self.balance >= value:
+            self.balance -= value
+            print("Withdraw money successful")
+        else:
+            print("No balance")
+
+    def deposit(self, value):
+        self.balance += value
+
+    def extract(self):
+        print("Customer: ", self.get_owner(), " | Your current balance: ", self.balance)
